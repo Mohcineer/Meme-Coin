@@ -1,0 +1,237 @@
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Meme Coin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <header>
+        <h1>Meme Coin</h1>
+
+        <p>Achetez vos Memes-Coins maintenant !</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about"> A propos</a></li>
+            <li><a href="#buy">Acheter</a></li>
+            <li><a href="#team">Meilleures Ventes</a></li>
+            <li><a href="#community">communauté</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <div class="price-ticker">
+            Prix actuel: 1 MEME = 0.00042069 ETH
+        </div>
+
+        <div class="meme-coin">
+            MEME
+        </div>
+
+        <section id="about">
+            <h2>A propos de Meme Coin</h2>
+            <p>Bienvenue dans l'univers Meme Coin, la cryptomonnaie qui fait le buzz sur internet ! Née des recoins les
+                plus dank du web, Meme Coin marie la puissance de la blockchain à la nature virale des mèmes internet.
+                Notre mission ? Rendre la crypto aussi fun et partageable que vos mèmes préférés !</p>
+        </section>
+
+        <section id="buy">
+            <h2>Acheter des Memes-Coins</h2>
+            <div class="buy-form">
+                <form>
+                    <label for="amount">Montant en Memes-Coins :</label>
+                    <input type="number" placeholder="Montant" id="amount" name="amount" min="1" step="1" required>
+
+                    <label for="payment">Méthode de paiement :</label>
+                    <select id="payment" name="payment" required>
+                        <option value="">Choisissez une méthode</option>
+                        <option value="card">Carte bancaire</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="crypto">Autre crypto</option>
+                    </select>
+
+                    <label for="email">Votre email :</label>
+                    <input type="email" placeholder="Email" id="email" name="email" required>
+
+                    <button type="submit">Acheter mes Memes-Coins</button>
+                </form>
+            </div>
+            <p><small>Attention : L'investissement en cryptomonnaies comporte des risques. N'investissez que ce que vous
+                    pouvez vous permettre de perdre.</small></p>
+        </section>
+
+        <section id="team">
+            <h2>Meilleures Ventes</h2>
+
+            <div class="team-member">
+                <img src="https://i.redd.it/b3ko6n060kmz.png" alt="Doge, le PDG" width="100" height="100">
+                <div class="meme-info">
+                    <div class="meme-title">C'est Bien - Crash du Marché</div>
+                    <div class="meme-price">0.14 ETH</div>
+
+                </div>
+                <button class="buy-button">Acheter</button>
+            </div>
+
+            <div class="team-member">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUQEhITFhMQERUXGBgXEhYWGBYTFRUXGBcZGBUZHSogGhonGxoWITciJSorMC4uGB8zPzMtOCgtLisBCgoKDg0OGxAQGy0mICYtLS04Ly0uLy0wLS0uLS0tLS0tLy8yLy0tLi0tLS0tLS0tLy0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBEQACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAwQFAgEGB//EAEIQAAIBAgMFBQQGBwcFAAAAAAECAAMRBBIhBTFBUWETIjJxoUKBkbEUI1JigsEGFVNykpOiB0Njg7LC0TNzo7Pw/8QAGwEBAAMBAQEBAAAAAAAAAAAAAAECAwQFBgf/xAA2EQEAAQICBgkDBAEFAQAAAAAAAQIRAyEEEjFBUWEFIjJxgZGhsfATwdEGQlLhIxVikuLxcv/aAAwDAQACEQMRAD8ArTx3jkBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQK2Kx6UzlJJb7KjM3vA3DqbCWiiZzdGj6JjaRNsKmZ+cVM7cQEB0dATa7Gmd+7uq5b0low5nZLsxuh9KwqdaqI7rxfySNthPZSq/kmX1qFZGpxmPncYXQ2m4myiY78vdGdpVDupqP3qhJ+AW3rJ1aeL0cP8ATOPPbriPOURxmI+1RH+Ux9e0jqcJ8/6dVP6Yot1sSfL+xMbiBvNFumR09c7fKLUc1av0xl1cTzhZobWW4WoppkmwJIZCTwzjd+ICRNH8c3i6Z0TpOixrVReOMNGUeYQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEDKr7VYm1ELYe218pP3VFiw63A85pqxHa8nudH9B42lU69XVp9/BnU8IANXc3OY97LcneTlsT7zLTXwh9jgaDRhYcYcTNo8Pa1/FNSpIvhCi/IAX/AOZSapna6aMKijs0xCTMOchewGHOAzDnAXgeNYixsQdLbwQZJNN4tMLGyK5B7EkkZSyE6nKCAyk9Li3Q9JNWcaz4Ppvo2NFxIro7NXpPD8NWZvCICAgICAgICAgICAgICAgICAgICAgICAgICAgZu2axstIGxq5sxBsRTW2ax6kqvvM0ojbVw93qdD6HGlaTFNXZjOXWzsUtNWUg2YLYACwKHMp38GC6cRmGl5MVW2vvsTC1rauVvbZby9bNCjtJDUzBKhP0g1hZQW7zNmU67ippjzX4zFUX8bsasCrUtMx2dXlsi0+d/Ny+MJR0C1h2wW3dNgVpspVbt4L3Gt7KCN4vJ1siMKIqibxlf3jOctv35ZOFxn1XY5KnadkaQcLqA9QVFW1720YjnfdpI1srLThf5Ne8Wve3dFrrOI2qDVdmSr9YwYIVtkyVHqKQCTuO/nmfcLSZrz2M6dHnUiImMsr8bxET87kbbUBAbLVy5qljbS7vWIYEkjMucEaeJN9o1kxgTe143ekR452z5Sg+mHIQVqGy1VLFfESiKGf71PLceQ1GpMa2TT6Ua17xun1mbRyqv75bk2I2sMz3V+9ULi4AZA9cVWXUnMpSwsdLqOBN01/PFSjR5tFpjZblNqbX5TE+kzvszMXi8+IouBa5yHVv2bbszMQLhdCT+UXvE9zyensCY0KOVV/O/KPZqTF8SQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAxcY2au3+Gir7zdm9CnwmmyiH2P6ZwrYdeJxm3l/68lX1CxhMVkDArcPkvrY9xw415af/WlomzOvD1pib7L+sWXae2rZfq/Abjv79ax17uo+t0ve2X7xltdhOi3vnt5f/PP/AG/LIKm0AVdAhGexvn1WoLWZbKLALmW3AObSNbKzSMGYmJmdnLdwn0m/J6NpntziMveLllBa4W7ZiN2oILDh4jGt1ro+h/ijDv8A38+w20FP93uCBRnOi082ThqdRfnY7rmNbkRgT/Lju42v7ZfezttrG+cLlfO73DC3aPTVGJBXUEqWI45iI10Ro2Vpm8WiPCJmY387X5XUcTVDMWChQdygkgC1rAnWVmby2opmmmImbq9Q2ameVan/AFOF/OTTv7peX07TfQa/D3hvzN+ekBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQMbadPNVApm1QAdo29cuuUFeLeViBx3A605U9Z6Wg6fjaJeaJyndOyVZ2dNagXLxdSdOrKfCOtzFonsvptC/UGFi1RRixqzO/ciO0AGylHB4Hu2YcCpvr85P05teJetOlxFWrVTMeVp7pvn7pBXc7qTebFVHoSfSRaI2y0+rXPZonxtEfefR4e03lkQdAW/qNh6RGr3on62+Yp9fWbeyLOm41yTyDKPRBeWtP8fniz1sO+eLfxj7ZgWnwFY+fbfNjE63L0RFOFM5RVP8Az+4aa8KVU/iI9C8i/OPngnUo3UVef/Y7MfYrDyc/INrF+cfPA1Kf41x4z+UVZzYWdtGVrVKZA7rBgM6qANQNdZem3Dyly6VTOLg1YWvOf8qZ94iPu28Jtum/i7vW4ZL/AL6mw/FaZThTGx8Xj9GaRhRrW1o405x6bGnM3AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQKm0cSUUKlu0qGy31A5sRyA16mw4y9FMTnOxeim+c7FahSCiwueJJ3sTvJPMyKqrzdMzeUkhVQxOCpqCwbshx1ATnqjd35GaRXVPN36N0hpOB1aKrxwnOPJmg0Ruq4W3QZPQMQZr1uEvUw+maqYtOBHheHo7IHN2uGHUUiT/FmkWqnK0+aKumcS96MGmO+LrC1qRF/pRt90UwP9JldWr+LOvpvTpyi0d0fl7h6aM9jUaoji6MKhAuujqchAuND7zyiZmKb2t4OXF6T0yunOuY9PZd/V9L7APnc/OU+pVxcc6Xjz++rzlFVweFXxJRXqQoPxO6TFWJOyZVjFxZm959VCmiZxTpOlTOTlP0ggggXykrcnQGx6a8L6Te15i3g97ROl/p4Uxj0zMxviZjLmlxWz3Gr020G8qtddfIdp8bCRFXCft/Tsw+ldDx5602n/fEVR57fV3s7EOg+qsVHsZ81M9EbxIem75yKrTPW/v8AtOk9DYWlUzXg2ieMTemfvE/M30WGrB0V13OoIvv159ZjVFps+OqpmmZpnbCSQqQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEDIoP2jGtwbRP+2DofxHveWXlNK8ur8u1qyjV+XTyiiLFVwiliCbWAA3kkgADzJAk00602Wpi82ZlOk7uWsjOpsXYFkpn7FJdLkcWuNfgNpmIi27hx5y1mYiLfJ5ystSt48S3lemg91hf1lb8KfeVL8KXJRPZxLA8+2DejXEXnfT6JvO+n0UKuJp0zZnSm5OlSmRkY/4lIHT1/eE0iJq58p2+EtIiaufKdvhKe4qEVkAFan3mQN3agylcytubQmze49I7Mas7J9EbI1Z2ey/UxndVqaljUAK8BYi92b2RaZRRnMTuZRRnN9zIw9IMSaZza6sgpIhPRnDO/ncibTNtv3n2tENpm3a+8/0lxGGqAXcVCo1NuwqWA1vYoGNumsiKo3fePuiKo3fePu1f0fr1DnRmDpTKBXBvmugbjc2sy6knedTKYsU5TGV2eNFOUxku4nZ9NzmK2b7Skq3kSN46GZxXMZLaPpWNo83wqphPQohFCKLKoAGt9B1O+RM3m8sKqpqmap2y7kIICAgICAgICAgICAgICAgICAgICAgIGftZ7gURvq3zdKS2z/G4X8R5TSjLrcPdpRFutw9yUQQhxVpBgVYAg8DJiZibwmJmM4Ujg6VEiqAmVN6VKfbUDfTvUToNdbi3O++bYeNVfi2w8Wq+y6L9ONv50wtNcDhKNOk+er2NILSrkEZQcozqls10ufFvNgR2YeLFex10YkVqmw9jbMr7QxKY3GU6GHXM6HDkimzFgctN6ikhVBIsRc20mjR+qf2BUkbB4gACpSpY2otJmQZjTyo2umm8G3AsYGX/AGtfoymHr08TQQIuJz+EWVcUozeHgKiBrgaE0yd5vMMaMr+bDGjf5vi8TgWOza9a7LRwtOlSOlmqV6uTLT6BUYM3mo4m1cLDvVNc8VcLDvVNcsHDbEo1cVhKFVvoVLEYamzVatRaik5GJqjUBFdlsFJ0vOl0v0v+zn9EcNisHiB2oRsDjK1JMXSAVa1FQGDVEJKuNSbnUKR3pSuimrarVRTVtYH6P00U4habh0GJOV1RkV17OnZlRiSqkagX3ETi0iLTHd93DpEWmO77tac7nICAgICAgICAgICAgICAgICAgICAgICAgY+GbOWrH+8tl6UxfIPfq3m5mleXV4e7WrLq8PdYlFCAgIFH6K6XFLKyH+7e4A5hWANh0II8pprRPa28WmtE9rbxZuN2RTffhGB50npj0JA9JrTizH7vOJa04kx+7zu+h/R79KMZgaC4XDtUSkhJAbC0nYFjcnOp1PneafXnk0+vPJQ2rtXEY8kVK2IqkN4qjGnTpOARdKKZVzi53L5mVqxKozqnwjerViVfunwc7VXuOhFc0atjUWnUbKWW2VmpXsx0HeAJ0EzwsSqItE+bPDxKoyiWJQ2Hg6lshr97ccjW/iKWtNZxcWnbb54tJxcSnbb54tNsU1CiMGPpL0c5y0zUQU3Y6ksiHM4495Tu6RFddcbYgiuuuNsQ39m01FMZWDZu8WHtFt56DgBwAA4TkrnNyVzMysyqpAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQKO2H+rycazBOWh1f+gNL4e2/Bph7b8M3IlVSAgZe0sVTvlOc5TYhanZrmPAuWW5twBO/dNsOmq39XbURPzNewbXUd0qBoLsG055gTeZ1Rmzq2ppVVWrY+mpyZruPYXvN/CNR75eKKpzXiiZzRsatTQA0lO8kg1COSgXC+ZPuk9Wnn7J6tPNao0lRQqiwUWAlJmZm8qTMzN5dyEKtOgUe6f9N7lh9l9+Zeh4jnY85eaomM9q8zeM9qSlhaaksqIrNvIUAnzIlZqmcplE1TMWmXGzcWFrPRt3We6ngKhQMy26jveZaXqi9MTv8As2qwapwYxd17NmZOUgICAgICAgICAgICAgICAgICAgICAgIGbjzetTHBadRvfdFX0LzSOxPg0p7M+DqUVICBmY6hkYVAl0CsCALlczZi2XiCd9td00idaLXzep0bpVGFXP1N+9QWmB3lU2JuKlBsun3kB1PxvyEtrTsv4S9rE0fDxO1ReOMfPZZoYtzolZWI3rUp2f3gFSPhImIjbT5fJcM9FYNc9Su3JZGNqDxUQf3HFz7nA+ZlbUzsnzc2J0PjR2ZiXf60QeJaq/5TH1UGNThMeblq6P0in9svf1pR41FHnofgY+nVwYTo+LH7Z8nSbSoHdWpfzF/5j6dXCVJoqjbDt8ZSG+pTHm6j85EUVTuRqzwV6u1EItSIqOdwXVQebONAPWT9OY7WUOnA0PFxqrRBsTBliKhN1R2ObjUq6hm6KCSPMchraubePpDr0/SKcOiNGw9kbZb8xeOQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEDLqG9eoeCpTX399j6MsvPZhp+yPFJKqkBAQKdfZ6klkORzxXcT95dzfPrLxXunOHVo+l4uDPVnwUsTTI0r0gwB8ajMo6keJPUDnJiP4T4fMpe3g9JYGNaMWLSUsIhF0d8p+zVcj3a/KRNcxtiPJ6VOHTMXpmbd8ujhSPDVqDzIYf1CRrxviD6c7qp9/cC1h7dM/gZf9xk3o4Sm2LG+PL+3JFU71o/xMf9sRNHGUf5OEev4crTqfs6A8mb5ZJN6eM/PFWIxP40/PB7VpMR9YyrTAuQtxcDgWvoPKImInqxmmqmq3XmIjl+eDb2LhylM3GXOxYL9hSAALcDpcjmTK1zeXyOm4tGLjTVRsX5RykBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAyaI79Y863+mmi/lNKtkdzWrZHcmlFCAgICAgVauzqTEtlsTvKsyE+ZUi8vGJVEWbYekYmH2aphGdm28NWoPMhx/UCfWNeN8Q66OlNIp3373n0F/2x96L+VpF6eDX/AFjH4QfQan7b4Ux+ZMm9PD1P9Yx+EKtVQrZfpFVmG9UpI9v3rJ3feZeIvF9WLd6Y6U0mc8rPKmFSoh+saoz3RFNlAqEEaoADdd5zbrE6SaZmmrZb8McXTsfFm1c5bX1QnO8wgICAgICAgICAgICAgICAgICAgICAgICBj4HwsT7VWqf/ACtb0sJpibbd3s1r2+XssSihAQEBAQEBAqvtGkGyltxsTlbKG5F7ZQehMvGHVbYv9OrgrPje1YU0ZlRhfPYrnA3rSJ6a5uW7mLxRqxefL8rxRqxefnetGrRoAKWRAb2BIF+Z139TKWqrz2qWqrm+14ijOMRSyMSpB3WdTb2xex0GuvLlab5atSb5atTSwuMV7jVXXereIdeRHUXEpVTMZ7mdVMwsSqpAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQMjDrlapT+zUZh+7UOcHyuWH4ZpXnafmTWrO0/Mk8ooQEBAQEBAQM7CoMpwrj2WAPB6Z0uPvC4v114zWqc9ePktapz14+ShrJWD0kPZ2XNla7AZlXQtTtvAvYZrb+ktE0WmYutGraZQjKSfFUDC50u+ItuF91OhfjoDrbje1pjOcvt+ZWtPd9vzK1gNnN46xUsXL5V0QOTe5+0RoBfdYcdZSvEjZT3KV4kbKV+vSzWINmXVWG9T+Y5jjMomzOJst4HFdoDcZXXRl5G28Hip4H8wRFVNu5Wqm3csyqpAQEBAQEBAQEBAQEBAQEBAQEBAQEBAobRw7XFVBdlFmXi6b9PvA3I8yONxemYmNWV6Zi2rKKjWVxdTcfAg8iDqD0MiYmJtJMTGUpJCCAgICAgIFLauiq/tJVp2PLM6qfcQSJph7bd7TD22d7QwnaKBpdWDAG+U81YDepFwZGHXqyiirVlFst7l84y1i5Lre9lvZMvNAtgLcjxvJxN1tnz1WxN1tj3Wq5FyKVM2NjbO43i49kbrcTflq7Ec/ZHZjnKd8SM4pgXY6m3srzPmdAOPuMrFOV1dXK7x6wRu1BByd2oARohsbnkV8XkTzk0xfq8UxF41WxM2RAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQKuKwCOc2qvbxqbN0vwYdCCJeK5jLcvFcxkrNh667slQe+m1vLVSf4ZPUnl6pvTPL1R9uw8VGqv4Q//AKy0anCYTqxumHIxyffHnRqL81kak/Jg1JenGpzJ8kcn4AXjUk1JFxYO5Kx/yag+aydSeXnBqd3nD36Qf2db+U35iRqc480avOPN72r8KNUnyVfVmEascYNWOMPTs1qoPbEAWOVUJNm4MWIFyN4FrA666WtFcU9lMVxT2Xju1PSrYXsA48DE87+A9DpyJkasT2S0TnS9r4VHtnUEruPEeR3iRFU07JRFUxsVaOGq0xkptTyAnLmVrrck62PetfpLTVTVnN15qpqzm6LC9oqZFpsKreOo1iubcXvfvdAOg0EtVqzN5nLh9k1WmbzOXBbRUpKKepzX08TOTvNt5J4mU61c3+QpnVN2js+my0kVvEqKDrfcOJ4nrK1zE1TMKVzE1TMLEqqQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQPGAIsdQYFP8AVdMeEuvRXaw8lNwPcJfXnev9Sd7k7MP7esP5X504144R6/k1+Uev5Bsz7VWqw5XVfVFB9Y1+EQa/CIWcPhUTwqATvO8nzY6n3ys1TO1WapnamkIICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB//2Q=="
+                    alt="Grumpy Cat, le Directeur Financier" width="100" height="100">
+                <div class="meme-info">
+                    <div class="meme-title">Distracted Boyfriend - Édition Crypto</div>
+                    <div class="meme-price">0.024 ETH</div>
+                </div>
+                <button class="buy-button">Acheter</button>
+            </div>
+
+            <div class="team-member">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBYLW3qCyqHzXsISzMKxAFghtAGldj5Z6_aw&s"
+                    alt="Nyan Cat, le Directeur Technique" width="100" height="100">
+                <div class="meme-info">
+                    <div class="meme-title">Stonks - Édition NFT</div>
+                    <div class="meme-price">0.47 ETH</div>
+                </div>
+                <button class="buy-button">Acheter</button>
+            </div>
+
+            <div class="team-member">
+                <img src="https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/zras7f78iebdqwxonmwn"
+                    alt="Pepe, le Directeur Marketing" width="100" height="100">
+                <div class="meme-info">
+                    <div class="meme-title">C'est Bien - Crash du Marché</div>
+                    <div class="meme-price">0.63 ETH</div>
+                </div>
+                <button class="buy-button">Acheter</button>
+            </div>
+        </section>
+        <section class="se connecter">
+            <h2>Se connecter avec votre compte Metmask</h2>
+            <button id="connectButton" style="background-color: #f582ae; color :aliceblue ;padding: 10px 20px;
+            font-size: 16px; border: none;
+            border-radius: 5px;">Se connecter à MetaMask</button>
+            <button id="disconnectButton" style="background-color: #f582ae; color :aliceblue ;padding: 10px 20px;
+            font-size: 16px; border: none;
+            border-radius: 5px;">Se déconnecter de MetaMask</button>
+            <div id="status"></div>
+
+            <script>
+                const connectButton = document.getElementById('connectButton');
+                const disconnectButton = document.getElementById('disconnectButton');
+                const status = document.getElementById('status');
+                const userInfo = document.getElementById('userInfo');
+                const userAddress = document.getElementById('userAddress');
+                const userBalance = document.getElementById('userBalance');
+
+                let ethereum;
+
+
+                async function initMetaMask() {
+                    if (typeof window.ethereum !== 'undefined') {
+                        ethereum = window.ethereum;
+
+                        try {
+
+                            const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+
+                            if (accounts.length > 0) {
+                                const address = accounts[0];
+                                status.textContent = `Connecté: ${address}`;
+                                connectButton.style.display = 'none';
+                                disconnectButton.style.display = 'inline-block';
+
+
+                                showUserInfo(address);
+                            } else {
+                                status.textContent = 'MetaMask connecté, mais aucun compte sélectionné.';
+                            }
+                        } catch (error) {
+                            console.error(error);
+                            status.textContent = `Erreur de connexion: ${error.message}`;
+                        }
+                    } else {
+                        status.textContent = 'MetaMask n\'est pas installé. Veuillez installer MetaMask depuis https://metamask.io/';
+                    }
+                }
+
+
+                async function showUserInfo(address) {
+                    const provider = new ethers.providers.Web3Provider(ethereum);
+                    const balance = await provider.getBalance(address);
+
+                    userAddress.textContent = address;
+                    userBalance.textContent = ethers.utils.formatEther(balance);
+
+                    userInfo.style.display = 'block';
+                }
+
+                async function disconnectMetaMask() {
+                    try {
+                        await ethereum.request({
+                            method: 'wallet_requestPermissions', params: [{
+                                eth_accounts: {},
+                            }]
+                        });
+                        status.textContent = 'Déconnecté de MetaMask';
+                        connectButton.style.display = 'inline-block';
+                        disconnectButton.style.display = 'none';
+                        userInfo.style.display = 'none';
+                    } catch (error) {
+                        console.error(error);
+                        status.textContent = `Erreur de déconnexion: ${error.message}`;
+                    }
+                }
+                connectButton.addEventListener('click', () => {
+                    initMetaMask();
+                });
+
+                disconnectButton.addEventListener('click', () => {
+                    disconnectMetaMask();
+                });
+
+                window.addEventListener('load', async () => {
+                    if (typeof window.ethereum !== 'undefined') {
+                        ethereum = window.ethereum;
+                        const accounts = await ethereum.request({ method: 'eth_accounts' });
+
+                        if (accounts.length > 0) {
+                            const address = accounts[0];
+                            status.textContent = `Connecté: ${address}`;
+                            connectButton.style.display = 'none';
+                            disconnectButton.style.display = 'inline-block';
+
+                            showUserInfo(address);
+                        } else {
+                            status.textContent = 'MetaMask est installé. Vous pouvez vous connecter.';
+                        }
+                    } else {
+                        status.textContent = 'MetaMask n\'est pas installé. Veuillez installer MetaMask depuis https://metamask.io/';
+                    }
+                });
+            </script>
+        </section>
+        <section id="community">
+            <h2>Rejoignez notre communauté</h2>
+            <p>Devenez partie intégrante de la révolution Meme Coin ! Rejoignez notre communauté vibrante de seigneurs
+                des mèmes et d'enthousiastes de la crypto.</p>
+            <ul>
+                <li><a href="https://discord.gg/memecoin">Discord</a></li>
+                <li><a href="https://reddit.com/r/MemeCoin">Reddit</a></li>
+                <li><a href="https://twitter.com/OfficialMemeCoin">Twitter</a></li>
+                <li><a href="https://t.me/MemeCoinOfficial">Telegram</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Meme Coin. Tous droits réservés. | <a href="/conditions">Conditions</a> | <a
+                href="/confidentialite">Confidentialité</a></p>
+    </footer>
+</body>
+
+</html>
