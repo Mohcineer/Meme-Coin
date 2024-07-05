@@ -1,0 +1,164 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #fef6e4;
+    color: #001858;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f582ae;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #001858;
+    text-shadow: 2px 2px #fef6e4;
+}
+
+nav {
+    background-color: #8bd3dd;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #001858;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fffffe;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.meme-coin {
+    width: 200px;
+    height: 200px;
+    background-color: #f9bc60;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    font-size: 2em;
+    font-weight: bold;
+    color: #001858;
+    box-shadow: 0 0 20px rgba(249, 188, 96, 0.5);
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.team-member {
+    background-color: #e3f6f5;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.buy-form {
+    background-color: #e3f6f5;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.price-ticker {
+    font-size: 36px;
+    background-color: #FF69B4;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    animation: blink 1s infinite;
+}
+
+.buy-form input,
+.buy-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #8bd3dd;
+    border-radius: 5px;
+}
+
+.buy-form button {
+    background-color: #f582ae;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.buy-form button:hover {
+    background-color: #1a4c9d;
+}
+
+.meme-info {
+    padding: 10px;
+}
+
+.meme-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.meme-price {
+    color: #ff4500;
+    font-weight: bold;
+}
+
+.buy-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f582ae;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 71%;
+    margin-top: 30px;
+    margin-left: 20px;  
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
+}
