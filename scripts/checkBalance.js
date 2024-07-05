@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const mnemonic = fs.readFileSync(path.resolve(__dirname, '..', '.secret')).toString().trim();
-const infuraKey = '82da40ab7145430a89434ec3e252a375';
+const infuraKey = fs.readFileSync(path.resolve(__dirname, '..', '.keyId')).toString().trim();
 
 module.exports = async function(callback) {
   try {

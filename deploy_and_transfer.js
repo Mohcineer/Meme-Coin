@@ -1,7 +1,7 @@
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 const Web3 = require('web3');
 const MemeCoin = require('./build/contracts/MemeCoin.json');
-const infuraKey = "82da40ab7145430a89434ec3e252a375"; // Votre Infura Project ID
+const infuraKey = fs.readFileSync(path.resolve(__dirname, '..', '.keyId')).toString().trim(); // Votre Infura Project ID
 const fs = require('fs');
 const mnemonic = fs.readFileSync(".secret").toString().trim();
 

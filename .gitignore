@@ -1,6 +1,4 @@
 .secret
+.keyId
 .vscode
 *node_modules/*
-
-# dotenv environment variables file
-.env
